@@ -2,7 +2,7 @@ import axios from 'axios';
 import { jwtDecode } from 'jwt-decode';
 
 const api = axios.create({
-  baseURL: 'http://localhost:5000/api',
+  baseURL: 'https://bug-tracker-1-dukb.onrender.com/api',
 });
 
 api.interceptors.request.use(config => {
