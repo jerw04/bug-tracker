@@ -26,7 +26,7 @@ api.interceptors.response.use(
       try {
         const refreshToken = localStorage.getItem('refreshToken');
         const response = await axios.post(
-          'http://localhost:5000/api/auth/refresh',
+          'https://bug-tracker-1-dukb.onrender.com/api/auth/refresh',
           { refreshToken }
         );
         
